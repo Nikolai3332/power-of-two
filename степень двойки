@@ -1,0 +1,17 @@
+uint baseNumber = 2;
+        uint numberInDegree;
+        int degreeOfBaseNumber = 1;
+        int number;
+
+        Random random = new Random();
+        number = random.Next();
+        numberInDegree = baseNumber;
+
+        for (int i = 0; numberInDegree < number; i++)
+        {
+            degreeOfBaseNumber++;
+            numberInDegree *= baseNumber;
+        }
+
+        Console.WriteLine($"Получили сучайное число: {number}. К числу {baseNumber} получили степень {degreeOfBaseNumber}, в результате получили число: {numberInDegree}");
+        Console.ReadKey();

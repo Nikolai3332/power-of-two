@@ -6,14 +6,15 @@ internal class Program
         int numberInDegree;
         int degreeOfBaseNumber = 1;
         int number;
+        int seedNumber = 1;
+        int finalNumber = 100;
 
         Random random = new Random();
-        number = random.Next(0, 100);
+        number = random.Next(seedNumber, finalNumber); 
         numberInDegree = baseNumber;
 
-        for (int i = 0; numberInDegree < number; i++)
+        for (int i = 0; numberInDegree < number; degreeOfBaseNumber++)
         {
-            degreeOfBaseNumber++;
             numberInDegree *= baseNumber;
         }
 
